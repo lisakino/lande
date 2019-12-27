@@ -130,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="796" y="127"/>
         </scene>
-        <!--Item-->
+        <!--Bill-->
         <scene sceneID="CbV-hX-kED">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ar-TX-OBT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kPz-Vr-ntW"/>
+                    <tabBarItem key="tabBarItem" title="Bill" id="kPz-Vr-ntW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6lh-mS-Awb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -149,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="-1178" y="127"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="Y9S-cX-Qh7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LGx-51-ZKh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hsG-KG-8vr"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="hsG-KG-8vr"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UgK-IY-HaV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kfb-Qi-yX2">
