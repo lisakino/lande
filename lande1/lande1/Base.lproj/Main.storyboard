@@ -152,11 +152,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFj-yt-lKg">
+                                <rect key="frame" x="148" y="735" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="nKJ-8P-nqK" kind="show" id="ABI-Z7-dXa"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRP-m7-Obj">
                                 <rect key="frame" x="170" y="308" width="75" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="TotalAmount:" destination="4cq-fI-zFl" eventType="editingDidEndOnExit" id="RrF-Lg-okT"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -165,8 +176,25 @@
                     <navigationItem key="navigationItem" id="tpa-qB-byt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hra-PR-iYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4cq-fI-zFl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="667" y="127"/>
+            <point key="canvasLocation" x="666.66666666666674" y="126.5625"/>
+        </scene>
+        <!--Add Contact Bill View Controller-->
+        <scene sceneID="4m2-zN-kap">
+            <objects>
+                <viewController id="nKJ-8P-nqK" customClass="AddContactBillViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcC-wV-f9t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0cB-Rd-cZ4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3T4-Od-pai"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFg-8b-1gG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="127"/>
         </scene>
         <!--Bill-->
         <scene sceneID="CbV-hX-kED">
