@@ -175,6 +175,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveTotalAmount:" destination="VNd-UF-93Q" eventType="primaryActionTriggered" id="a0b-bJ-52b"/>
+                                    <segue destination="jwZ-pr-fFR" kind="show" id="jky-op-a53"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -213,6 +214,7 @@
                             <outlet property="delegate" destination="jwZ-pr-fFR" id="guG-Cx-c9d"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="twj-SI-VzP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eN4-rg-PxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
