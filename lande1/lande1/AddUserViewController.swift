@@ -26,7 +26,7 @@ class AddUserViewController: UIViewController {
         let emailtext: String = emailText.text!
         
         //this is creating a contact object
-        let user = ContactObjects(name:nametext, email:emailtext)
+        let user = Contact(name:nametext, email:emailtext)
 
         //printing out the contact object
         print("contact: \(user)")

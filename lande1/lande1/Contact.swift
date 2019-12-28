@@ -1,5 +1,5 @@
 //
-//  ContactObjects.swift
+//  Contact.swift
 //  lande1
 //
 //  Created by Ella Hayashi on 2019-12-27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactObjects: NSObject {
+class Contact: NSObject {
     
     //Properties
     var name: String

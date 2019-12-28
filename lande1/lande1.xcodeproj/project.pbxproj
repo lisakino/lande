@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,9 +18,9 @@
 		ED1FF49B23B6B4E2001B3AF0 /* BillContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF49A23B6B4E2001B3AF0 /* BillContactsViewController.swift */; };
 		ED1FF49D23B6B54C001B3AF0 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */; };
 		ED1FF49F23B6B580001B3AF0 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF49E23B6B580001B3AF0 /* AddUserViewController.swift */; };
-		ED1FF4A323B6DEEE001B3AF0 /* ContactObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF4A223B6DEEE001B3AF0 /* ContactObjects.swift */; };
 		ED1FF4A923B6F815001B3AF0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1FF4A823B6F815001B3AF0 /* ExternalAccessory.framework */; };
 		ED1FF4AB23B6FCA0001B3AF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */; };
+		EDA8B66823B7E1800071B291 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B66723B7E1800071B291 /* Contact.swift */; };
 		FE8086D8246A5BEFDFE92947 /* Pods_lande1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88082BB9A18B5DAD3F42BEF2 /* Pods_lande1.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +41,10 @@
 		ED1FF49A23B6B4E2001B3AF0 /* BillContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillContactsViewController.swift; sourceTree = "<group>"; };
 		ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		ED1FF49E23B6B580001B3AF0 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
-		ED1FF4A223B6DEEE001B3AF0 /* ContactObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactObjects.swift; path = ../ContactObjects.swift; sourceTree = "<group>"; };
 		ED1FF4A623B6F7FC001B3AF0 /* lande1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lande1.entitlements; sourceTree = "<group>"; };
 		ED1FF4A823B6F815001B3AF0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDA8B66723B7E1800071B291 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,6 @@
 				AB2304C0BB5EA05164F15A0F /* Pods-lande1.debug.xcconfig */,
 				A4975543FC19646F79B86019 /* Pods-lande1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				ED1FF4A623B6F7FC001B3AF0 /* lande1.entitlements */,
-				ED1FF4A223B6DEEE001B3AF0 /* ContactObjects.swift */,
 				C112E37D23B577C4004D8724 /* AppDelegate.swift */,
 				C112E37F23B577C4004D8724 /* SceneDelegate.swift */,
 				C112E38123B577C4004D8724 /* BillAmountViewController.swift */,
@@ -106,6 +104,7 @@
 				C112E38E23B577C6004D8724 /* Info.plist */,
 				C112E38623B577C4004D8724 /* lande1.xcdatamodeld */,
 				ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */,
+				EDA8B66723B7E1800071B291 /* Contact.swift */,
 			);
 			path = lande1;
 			sourceTree = "<group>";
@@ -235,8 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA8B66823B7E1800071B291 /* Contact.swift in Sources */,
 				C1E6158623B6B89400B58CA4 /* AddContactsBillViewController.swift in Sources */,
-				ED1FF4A323B6DEEE001B3AF0 /* ContactObjects.swift in Sources */,
 				C112E38823B577C4004D8724 /* lande1.xcdatamodeld in Sources */,
 				C112E38223B577C4004D8724 /* BillAmountViewController.swift in Sources */,
 				ED1FF49F23B6B580001B3AF0 /* AddUserViewController.swift in Sources */,
