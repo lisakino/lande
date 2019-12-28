@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BillAmountViewController: UIViewController {
 
@@ -14,9 +15,13 @@ class BillAmountViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var totalAmount: UITextField!
+    @IBOutlet weak var totalAmountField: UITextField!
+    var docRef: DocumentReference!
     
     @IBAction func saveTotalAmount(_ sender: Any) {
+        guard let totalAmount = totalAmountField.text, !totalAmount.isEmpty else { return }
+//        let saveCost: [String: Any] = ["cost": totalAmount]
+//        docRef: Firestore.firestore().collection("items").document("cost")
     }
     
 }
