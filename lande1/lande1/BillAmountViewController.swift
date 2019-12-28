@@ -16,7 +16,7 @@ class BillAmountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var totalAmountField: UITextField!
-    var docRef: DocumentReference!
+    //var docRef: DocumentReference!
     
     @IBAction func saveTotalAmount(_ sender: Any) {
         guard let totalAmount = totalAmountField.text, !totalAmount.isEmpty else { return }
