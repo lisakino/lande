@@ -20,9 +20,11 @@
                                 <connections>
                                     <action selector="AddUser:" destination="bP0-ab-qud" eventType="touchUpInside" id="UMc-G7-w8L"/>
                                     <action selector="Add_User" destination="eeW-8n-1gF" eventType="touchDown" id="Sja-Ne-kgk"/>
-                                    <segue destination="bP0-ab-qud" kind="show" id="vsp-hh-J5o"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <segue destination="bP0-ab-qud" kind="show" id="xrM-Ni-DWS"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

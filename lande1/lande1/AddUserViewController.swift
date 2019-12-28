@@ -24,14 +24,16 @@ class AddUserViewController: UIViewController {
     @IBAction func AddUser(_ sender: AnyObject) {
 
         
-        //let nametext: String = nameText.text!
-        //let emailtext: String = emailText.text!
+        let firstNameText: String = firstNameTF.text!
+        let lastNameText: String = lastNameTF.text!
+        let phoneNumberText: String = phoneNumberTF.text!
+        let emailText: String = emailTF.text!
         
         //this is creating a contact object
-        //let user = Contact(name:nametext, email:emailtext)
+        let user = Contact(firstName:firstNameText, lastName:lastNameText, phoneNumber:phoneNumberText, email:emailText)
 
         //printing out the contact object
-        //print("contact: \(user)")
+        print("Contact: \(user)")
         
         navigationController?.popViewController(animated: false)
     }
