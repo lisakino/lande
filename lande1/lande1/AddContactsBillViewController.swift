@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddContactBillViewController: UIViewController {
+class AddContactBillViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
