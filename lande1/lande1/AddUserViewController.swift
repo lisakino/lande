@@ -10,8 +10,8 @@ import UIKit
 
 class AddUserViewController: UIViewController {
 
-    @IBOutlet weak var NameText: UITextField!
-    @IBOutlet weak var EmailText: UITextField!
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var emailText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,18 +19,21 @@ class AddUserViewController: UIViewController {
     }
     
     
-    @IBAction func AddUser(_ sender: UIButton) {
+    @IBAction func AddUser(_ sender: AnyObject) {
+
+        
+        let nametext: String = nameText.text!
+        let emailtext: String = emailText.text!
+        
+        //this is creating a contact object
+        let user = ContactObjects(name:nametext, email:emailtext)
+
+        //printing out the contact object
+        print("contact: \(user)")
         
         navigationController?.popViewController(animated: false)
     }
     
-    
 }
 
-extension AddUserViewController: UITextFieldDelegate{
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
-        textField.resignFirstResponder()
-        return true
-    }
-}
 
