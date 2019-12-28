@@ -11,13 +11,17 @@ import UIKit
 class Contact: NSObject {
     
     //Properties
-    var name: String
+    var firstName: String
+    var lastName: String
+    var phoneNumber: String
     var email: String
     
     //Initializer
-    init(name: String, email: String){
+    init(firstName: String, lastName: String, phoneNumber: String, email: String){
         //
-        self.name = name
+        self.firstName = firstName
+        self.lastName = lastName
+        self.phoneNumber = phoneNumber
         self.email = email
         
         super.init()
@@ -25,7 +29,7 @@ class Contact: NSObject {
         
     }
     override var description: String{
-        return "name: \(name) contact:\(email)"
+        return "Name: \(firstName) \(lastName), Phone Number: \(phoneNumber), Email:\(email)"
     }
     
 }
