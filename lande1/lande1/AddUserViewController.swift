@@ -35,6 +35,10 @@ class AddUserViewController: UIViewController {
         //printing out the contact object
         print("Contact: \(user)")
         
+        
+        
+        
+        
         navigationController?.popViewController(animated: false)
     }
     

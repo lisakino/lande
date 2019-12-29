@@ -7,31 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts View Controller-->
-        <scene sceneID="JJz-ax-j1b">
-            <objects>
-                <tableViewController id="lUL-jK-pvh" customClass="ContactsViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="p27-eC-nCV">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="SyJ-tU-QcN">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mI5-kj-Mge">
-                                <rect key="frame" x="330" y="3.5" width="64" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add User"/>
-                                <connections>
-                                    <action selector="AddUser:" destination="bP0-ab-qud" eventType="touchUpInside" id="UMc-G7-w8L"/>
-                                    <action selector="Add_User" destination="eeW-8n-1gF" eventType="touchDown" id="Sja-Ne-kgk"/>
-                                </connections>
-                            </button>
-                            <connections>
-                                <segue destination="bP0-ab-qud" kind="show" id="xrM-Ni-DWS"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifj-1u-VIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-268" y="-769"/>
-        </scene>
         <!--Add User View Controller-->
         <scene sceneID="Km0-kI-GGk">
             <objects>
@@ -114,8 +89,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="ybZ-ZS-rX4"/>
                     <connections>
-                        <outlet property="EmailText" destination="qX9-bm-7ap" id="CJ4-ve-9R8"/>
-                        <outlet property="NameText" destination="6EI-t1-JIl" id="LO6-ik-jFU"/>
                         <outlet property="emailTF" destination="jUx-5y-hGX" id="hzD-Pb-HA5"/>
                         <outlet property="firstNameTF" destination="6EI-t1-JIl" id="Auh-Lh-h2I"/>
                         <outlet property="lastNameTF" destination="qX9-bm-7ap" id="Lts-UD-Keo"/>
@@ -284,12 +257,38 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="lUL-jK-pvh" kind="relationship" relationship="rootViewController" id="sdF-KU-IV9"/>
+                        <segue destination="Mnn-0K-zN5" kind="relationship" relationship="rootViewController" id="Cwe-gH-IzH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sP-Av-PZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1077" y="-769"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9yJ-xd-qgY">
+            <objects>
+                <viewController id="Mnn-0K-zN5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kS1-4t-h6e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K3-HC-81l">
+                                <rect key="frame" x="229" y="100" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add New User"/>
+                                <connections>
+                                    <segue destination="bP0-ab-qud" kind="show" id="p6B-lS-K24"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ewz-Xm-ykn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qzQ-af-nSd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFa-4o-mpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="-767.41071428571422"/>
         </scene>
     </scenes>
 </document>
