@@ -133,6 +133,7 @@
 				C112E37723B577C4004D8724 /* Frameworks */,
 				C112E37823B577C4004D8724 /* Resources */,
 				80D3135975413420A5C4AD3B /* [CP] Embed Pods Frameworks */,
+				0862A7541F921A2A2273876A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +192,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0862A7541F921A2A2273876A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lande1/Pods-lande1-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lande1/Pods-lande1-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lande1/Pods-lande1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		80D3135975413420A5C4AD3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

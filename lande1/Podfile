@@ -13,5 +13,7 @@ target 'lande1' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'FirebaseUI'
+  pod 'Firebase/Auth'
 
 end
