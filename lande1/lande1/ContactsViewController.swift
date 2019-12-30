@@ -8,18 +8,23 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController {
-
+class ContactsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let list = ["1","2","3"]
+    //let list = db.collection("Contacts").getDocuments()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return(list.count)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactItem", for: indexPath)
+        
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "ContactItem")
+        
+        cell.textLabel?.text = list[indexPath.row]
         
         return cell
     }
