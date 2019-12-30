@@ -28,7 +28,7 @@ class BillAmountViewController: UIViewController {
         let collection = Firestore.firestore().collection("items")
         let item = Item(itemName:saveItemName, cost:totalAmount, status: "pending", recipient:"lisa", payer:"ella")
         
-        collection.addDocument(data:item.dictionary)
+        collection.addDocument(data:item.dictionary) 
         
         navigationController?.popViewController(animated: false)
     }
