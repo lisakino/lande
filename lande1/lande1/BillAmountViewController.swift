@@ -16,16 +16,21 @@ class BillAmountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+
     
-    @IBOutlet weak var totalAmountField: UITextField!
+    @IBOutlet weak var itemNameField: UITextField!
+    @IBOutlet weak var totalCostField: UITextField!
     
-    //var docRef: DocumentReference!
-    
-    @IBAction func saveTotalAmount(_ sender: Any) {
-        guard let totalAmount = totalAmountField.text, !totalAmount.isEmpty else { return }
-//        let saveCost: [String: Any] = ["cost": totalAmount]
-//        docRef: Firestore.firestore().collection("items").document("cost")
+    @IBAction func saveTotalAmount(_ sender: AnyObject) {
+        let saveItemName: String = itemNameField.text!
+        let totalAmount: String = totalCostField.text!
+
+        let collection = Firestore.firestore().collection("items")
+        let item = Item(itemName:saveItemName, cost:totalAmount, status: "pending", recipient:"lisa", payer:"ella")
+        
+        collection.addDocument(data:item.dictionary)
+        
+        navigationController?.popViewController(animated: false)
     }
-    
 }
 
