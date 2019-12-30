@@ -15,7 +15,10 @@ class BillAmountViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
+    
     @IBOutlet weak var totalAmountField: UITextField!
+    
     //var docRef: DocumentReference!
     
     @IBAction func saveTotalAmount(_ sender: Any) {

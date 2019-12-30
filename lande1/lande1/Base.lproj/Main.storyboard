@@ -169,9 +169,6 @@
                         <viewLayoutGuide key="safeArea" id="Nyk-we-c4I"/>
                     </view>
                     <navigationItem key="navigationItem" id="tpa-qB-byt"/>
-                    <connections>
-                        <outlet property="totalAmount" destination="G5x-xh-gTQ" id="ILF-Jk-fYm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hra-PR-iYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,17 +254,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Mnn-0K-zN5" kind="relationship" relationship="rootViewController" id="Cwe-gH-IzH"/>
+                        <segue destination="Mnn-0K-zN5" kind="relationship" relationship="rootViewController" id="Ymb-i2-mZs"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sP-Av-PZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1077" y="-769"/>
         </scene>
-        <!--View Controller-->
+        <!--Contacts View Controller-->
         <scene sceneID="9yJ-xd-qgY">
             <objects>
-                <viewController id="Mnn-0K-zN5" sceneMemberID="viewController">
+                <viewController id="Mnn-0K-zN5" customClass="ContactsViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kS1-4t-h6e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +274,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add New User"/>
                                 <connections>
-                                    <segue destination="bP0-ab-qud" kind="show" id="p6B-lS-K24"/>
+                                    <segue destination="bP0-ab-qud" kind="show" id="Igh-BP-eBC"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tSs-gv-QEw">
@@ -292,6 +289,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
