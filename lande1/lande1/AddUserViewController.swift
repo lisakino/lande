@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AddUserViewController: UIViewController {
 
@@ -29,15 +30,12 @@ class AddUserViewController: UIViewController {
         let phoneNumberText: String = phoneNumberTF.text!
         let emailText: String = emailTF.text!
         
-        //this is creating a contact object
-        let user = Contact(firstName:firstNameText, lastName:lastNameText, phoneNumber:phoneNumberText, email:emailText)
+        //database stuff
 
-        //printing out the contact object
-        print("Contact: \(user)")
+        let collection = Firestore.firestore().collection("users")
+        let users = Contact(firstName:emailText, lastName:firstNameText, phoneNumber:lastNameText, email:phoneNumberText)
         
-        
-        
-        
+        collection.addDocument(data:users.dictionary)
         
         navigationController?.popViewController(animated: false)
     }

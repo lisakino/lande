@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Foundation
+import Firebase
 
-class Contact: NSObject {
+struct Contact {
     
     //Properties
     var firstName: String
@@ -16,20 +18,14 @@ class Contact: NSObject {
     var phoneNumber: String
     var email: String
     
-    //Initializer
-    init(firstName: String, lastName: String, phoneNumber: String, email: String){
-        //
-        self.firstName = firstName
-        self.lastName = lastName
-        self.phoneNumber = phoneNumber
-        self.email = email
-        
-        super.init()
-        
-        
-    }
-    override var description: String{
-        return "Name: \(firstName) \(lastName), Phone Number: \(phoneNumber), Email:\(email)"
+
+    var dictionary: [String: Any]{
+        return[
+            "email": email,
+            "firstName": firstName,
+            "lastName": lastName,
+            "phoneNumber": phoneNumber
+        ]
     }
     
 }
