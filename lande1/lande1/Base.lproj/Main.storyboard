@@ -98,7 +98,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zt7-98-MjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eeW-8n-1gF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="667" y="-769"/>
+            <point key="canvasLocation" x="1576.8115942028987" y="-769.41964285714278"/>
         </scene>
         <!--Bill Contacts View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -244,7 +244,7 @@
             <objects>
                 <viewController id="uYy-zI-cyi" userLabel="LoginVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8a-e6-88b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-aR-k0v">
@@ -263,14 +263,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmK-uO-dlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4289" y="-786"/>
+            <point key="canvasLocation" x="-3379.7101449275365" y="-786.16071428571422"/>
         </scene>
         <!--SignUpVC-->
         <scene sceneID="dcC-e9-jGV">
             <objects>
                 <viewController id="6PX-cK-Qiq" userLabel="SignUpVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQ6-fR-4t5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umL-M9-LlO">
@@ -278,7 +278,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add account"/>
                                 <connections>
-                                    <segue destination="uYy-zI-cyi" kind="show" id="qtS-xl-BqK"/>
+                                    <segue destination="jIq-Lz-yFR" kind="show" id="qtS-xl-BqK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -289,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsG-lV-PaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3217.3913043478265" y="-786.16071428571422"/>
+            <point key="canvasLocation" x="-2307.2463768115945" y="-786.16071428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PQb-aE-s7t">
@@ -328,7 +328,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sP-Av-PZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1077" y="-769"/>
+            <point key="canvasLocation" x="-168.11594202898553" y="-769.41964285714278"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="9yJ-xd-qgY">
@@ -376,10 +376,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFa-4o-mpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213.04347826086959" y="-767.41071428571422"/>
+            <point key="canvasLocation" x="697.10144927536237" y="-767.41071428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JHF-YD-DWW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jIq-Lz-yFR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hFa-Px-Gcd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzj-vp-OHm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uYy-zI-cyi" kind="relationship" relationship="rootViewController" id="WGu-g3-GdH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8D-vF-Tuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4289.855072463768" y="-786.16071428571422"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0UX-19-ydS"/>
+        <segue reference="WGu-g3-GdH"/>
     </inferredMetricsTieBreakers>
 </document>

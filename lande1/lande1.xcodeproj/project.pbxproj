@@ -21,6 +21,8 @@
 		ED1FF49F23B6B580001B3AF0 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF49E23B6B580001B3AF0 /* AddUserViewController.swift */; };
 		ED1FF4A923B6F815001B3AF0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1FF4A823B6F815001B3AF0 /* ExternalAccessory.framework */; };
 		ED1FF4AB23B6FCA0001B3AF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */; };
+		ED6FFCAC23BAA06700C48F26 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFCAB23BAA06700C48F26 /* SignUpVC.swift */; };
+		ED6FFCAE23BAA07900C48F26 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */; };
 		EDA8B66823B7E1800071B291 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B66723B7E1800071B291 /* Contact.swift */; };
 		FE8086D8246A5BEFDFE92947 /* Pods_lande1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88082BB9A18B5DAD3F42BEF2 /* Pods_lande1.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		ED1FF4A623B6F7FC001B3AF0 /* lande1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lande1.entitlements; sourceTree = "<group>"; };
 		ED1FF4A823B6F815001B3AF0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED6FFCAB23BAA06700C48F26 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EDA8B66723B7E1800071B291 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,8 @@
 				ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */,
 				ED1FF49E23B6B580001B3AF0 /* AddUserViewController.swift */,
 				C112E38323B577C4004D8724 /* Main.storyboard */,
+				ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */,
+				ED6FFCAB23BAA06700C48F26 /* SignUpVC.swift */,
 				C112E38923B577C6004D8724 /* Assets.xcassets */,
 				C112E38B23B577C6004D8724 /* LaunchScreen.storyboard */,
 				C112E38E23B577C6004D8724 /* Info.plist */,
@@ -257,7 +263,9 @@
 			files = (
 				C1ADE9F623B7E7FD00106214 /* Item.swift in Sources */,
 				EDA8B66823B7E1800071B291 /* Contact.swift in Sources */,
+				ED6FFCAE23BAA07900C48F26 /* LoginVC.swift in Sources */,
 				C1E6158623B6B89400B58CA4 /* AddContactsBillViewController.swift in Sources */,
+				ED6FFCAC23BAA06700C48F26 /* SignUpVC.swift in Sources */,
 				C112E38823B577C4004D8724 /* lande1.xcdatamodeld in Sources */,
 				C112E38223B577C4004D8724 /* BillAmountViewController.swift in Sources */,
 				ED1FF49F23B6B580001B3AF0 /* AddUserViewController.swift in Sources */,
