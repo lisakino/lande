@@ -105,7 +105,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BillContactsViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngS-fa-45s">
@@ -139,7 +139,7 @@
             <objects>
                 <viewController id="VNd-UF-93Q" customClass="BillAmountViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jzw-vO-uza">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-Aa-tLF">
@@ -196,7 +196,7 @@
             <objects>
                 <tableViewController id="jwZ-pr-fFR" customClass="AddContactBillViewController" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gt7-Ys-FWj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -337,9 +337,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="password:" destination="6PX-cK-Qiq" eventType="editingDidEnd" id="Nuz-ic-BXF"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="THn-Xy-L1B">
                                 <rect key="frame" x="251" y="388" width="97" height="34"/>
@@ -347,6 +344,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH9-OB-J5D">
+                                <rect key="frame" x="189" y="572" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="signUpAction:" destination="6PX-cK-Qiq" eventType="touchUpInside" id="Ttl-Ku-Dv6"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-type Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-Eq-p0R">
                                 <rect key="frame" x="83" y="395" width="140" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -361,8 +366,9 @@
                     <navigationItem key="navigationItem" id="IhH-bF-GHV"/>
                     <connections>
                         <outlet property="email" destination="HJ6-2y-AxA" id="Vd0-KP-Ykx"/>
-                        <outlet property="password" destination="Zrk-Zt-o2b" id="t2R-jS-5qZ"/>
+                        <outlet property="password" destination="Zrk-Zt-o2b" id="VUM-aw-TQU"/>
                         <outlet property="retypePassword" destination="THn-Xy-L1B" id="piv-4y-equ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signupToHome" id="jqJ-e6-WNJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsG-lV-PaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -478,6 +484,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xub-XC-7UO"/>
+        <segue reference="jqJ-e6-WNJ"/>
     </inferredMetricsTieBreakers>
 </document>

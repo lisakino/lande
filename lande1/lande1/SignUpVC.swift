@@ -21,7 +21,6 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var retypePassword: UITextField!
     
-    
     @IBAction func signUpAction(_ sender: Any) {
     if password.text != retypePassword.text {
     let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
@@ -44,6 +43,8 @@ class SignUpVC: UIViewController {
            }
                 }
           }
+        navigationController?.popViewController(animated: false)
+
     }
 
 }
