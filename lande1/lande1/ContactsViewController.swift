@@ -8,28 +8,37 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let list = ["1","2","3"]
-    //let list = db.collection("Contacts").getDocuments()
+class ContactsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    
+    let data = ["1","2","3"]
+    
+    
+
+    @IBOutlet weak var ContactTV: UITableView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ContactTV.dataSource = self
+        
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(list.count)
+        
+        return data.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "ContactItem")
-        
-        cell.textLabel?.text = list[indexPath.row]
-        
+//        print(data[indexPath.row])
+
+        let cell = ContactTV.dequeueReusableCell(withIdentifier: "ContactItem", for: indexPath) as! ContactTableViewCell
+        cell.firstNameLabel.text = data[indexPath.row]
         return cell
     }
-
     
-    
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
+

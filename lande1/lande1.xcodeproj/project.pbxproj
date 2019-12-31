@@ -23,6 +23,8 @@
 		ED1FF4AB23B6FCA0001B3AF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */; };
 		ED6FFCAC23BAA06700C48F26 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFCAB23BAA06700C48F26 /* SignUpVC.swift */; };
 		ED6FFCAE23BAA07900C48F26 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */; };
+		ED6FFCB223BAAF4900C48F26 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6FFCB123BAAF4800C48F26 /* ContactTableViewCell.xib */; };
+		ED6FFCB423BAAF7100C48F26 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFCB323BAAF7100C48F26 /* ContactTableViewCell.swift */; };
 		EDA8B66823B7E1800071B291 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8B66723B7E1800071B291 /* Contact.swift */; };
 		FE8086D8246A5BEFDFE92947 /* Pods_lande1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88082BB9A18B5DAD3F42BEF2 /* Pods_lande1.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED6FFCAB23BAA06700C48F26 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		ED6FFCB123BAAF4800C48F26 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		ED6FFCB323BAAF7100C48F26 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		EDA8B66723B7E1800071B291 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +106,6 @@
 				C112E38123B577C4004D8724 /* BillAmountViewController.swift */,
 				C1E6158523B6B89400B58CA4 /* AddContactsBillViewController.swift */,
 				ED1FF49A23B6B4E2001B3AF0 /* BillContactsViewController.swift */,
-				ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */,
 				ED1FF49E23B6B580001B3AF0 /* AddUserViewController.swift */,
 				C112E38323B577C4004D8724 /* Main.storyboard */,
 				ED6FFCAD23BAA07900C48F26 /* LoginVC.swift */,
@@ -114,6 +117,9 @@
 				ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */,
 				EDA8B66723B7E1800071B291 /* Contact.swift */,
 				C1ADE9F523B7E7FD00106214 /* Item.swift */,
+				ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */,
+				ED6FFCB123BAAF4800C48F26 /* ContactTableViewCell.xib */,
+				ED6FFCB323BAAF7100C48F26 /* ContactTableViewCell.swift */,
 			);
 			path = lande1;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				C112E38D23B577C6004D8724 /* LaunchScreen.storyboard in Resources */,
 				ED1FF4AB23B6FCA0001B3AF0 /* GoogleService-Info.plist in Resources */,
 				C112E38A23B577C6004D8724 /* Assets.xcassets in Resources */,
+				ED6FFCB223BAAF4900C48F26 /* ContactTableViewCell.xib in Resources */,
 				C112E38523B577C4004D8724 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6FFCB423BAAF7100C48F26 /* ContactTableViewCell.swift in Sources */,
 				C1ADE9F623B7E7FD00106214 /* Item.swift in Sources */,
 				EDA8B66823B7E1800071B291 /* Contact.swift in Sources */,
 				ED6FFCAE23BAA07900C48F26 /* LoginVC.swift in Sources */,
