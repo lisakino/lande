@@ -24,18 +24,26 @@ class AddUserViewController: UIViewController {
     
     @IBAction func AddUser(_ sender: AnyObject) {
         
-        let firstNameText: String = firstNameTF.text!
-        let lastNameText: String = lastNameTF.text!
-        let phoneNumberText: String = phoneNumberTF.text!
         let emailText: String = emailTF.text!
         
         //database stuff
 
         let collection = Firestore.firestore().collection("users")
-        let users = Contact(firstName:firstNameText, lastName:lastNameText, phoneNumber:phoneNumberText, email:emailText)
-        
-        collection.addDocument(data:users.dictionary)
-        
+
+        // Create a query against the collection.
+        collection.whereField("email", isEqualTo: emailText)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                        print("SUCCESS")
+                    }
+                }
+        }
+
+
         navigationController?.popViewController(animated: false)
     }
     
