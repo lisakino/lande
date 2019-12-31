@@ -23,7 +23,6 @@ class AddUserViewController: UIViewController {
     
     
     @IBAction func AddUser(_ sender: AnyObject) {
-
         
         let firstNameText: String = firstNameTF.text!
         let lastNameText: String = lastNameTF.text!
