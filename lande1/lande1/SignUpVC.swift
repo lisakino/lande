@@ -22,28 +22,33 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var retypePassword: UITextField!
     
     @IBAction func signUpAction(_ sender: Any) {
-    if password.text != retypePassword.text {
-    let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
-    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-    alertController.addAction(defaultAction)
-    self.present(alertController, animated: true, completion: nil)
-            }
-    else{
-    Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
-     if error == nil {
-       self.performSegue(withIdentifier: "signupToHome", sender: self)
-                    }
-     else{
-       let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-       let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        
+        if password.text != retypePassword.text {
+        let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
         alertController.addAction(defaultAction)
         self.present(alertController, animated: true, completion: nil)
-           }
                 }
-          }
-        navigationController?.popViewController(animated: false)
+        else{
+        Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (authDataResult: AuthDataResult?, error) in
+         if error == nil {
+            let collection = Firestore.firestore().collection("users")
+            let uuid = Auth.auth().currentUser!.uid
+            print("THIS IS THE UID", uuid)
+            collection.document(uuid)
+            
+           //self.performSegue(withIdentifier: "signupToHome", sender: self)
+        }
+         else{
+           let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+           let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+               }
+                    }
+              }
+            navigationController?.popViewController(animated: false)
 
     }
 

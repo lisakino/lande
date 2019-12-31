@@ -23,10 +23,10 @@ class LoginVC: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: pswd.text!) { (user, error) in
-              if error == nil{
-                self.performSegue(withIdentifier: "loginToHome", sender: self)
-                             }
-              else{
+            if error == nil{
+                //self.performSegue(withIdentifier: "loginToHome", sender: self)
+            }
+            else{
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                                
