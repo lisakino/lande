@@ -13,10 +13,6 @@ class ContactTableViewCell: UITableViewCell{
     
     @IBOutlet weak var firstNameLabel: UILabel!
     
-    
-    //func configureWith(firstName: String){
-    //    firstNameLable.text = firstName
-        
-    
+
 }
 

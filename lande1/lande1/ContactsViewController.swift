@@ -5,6 +5,7 @@
 //  Created by Lisa Kinoshita on 2019-12-26.
 //  Copyright © 2019 Lisa Kinoshita. All rights reserved.
 //
+// resources for table view: https://github.com/codepath/ios_guides/wiki/Table-View-Guide
 
 import UIKit
 
@@ -19,9 +20,12 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ContactTV.dataSource = self
+        ContactTV.estimatedRowHeight = 100
+    //ContactTV.register(UITableViewCell.self,forCellReuseIdentifier: "ContactItem")
         
     }
     
@@ -30,9 +34,14 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         return data.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+
+        
 //        print(data[indexPath.row])
 
         let cell = ContactTV.dequeueReusableCell(withIdentifier: "ContactItem", for: indexPath) as! ContactTableViewCell
+        
+        
         cell.firstNameLabel.text = data[indexPath.row]
         return cell
     }
