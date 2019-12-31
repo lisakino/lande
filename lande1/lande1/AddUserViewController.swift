@@ -32,7 +32,7 @@ class AddUserViewController: UIViewController {
         //database stuff
 
         let collection = Firestore.firestore().collection("users")
-        let users = Contact(firstName:emailText, lastName:firstNameText, phoneNumber:lastNameText, email:phoneNumberText)
+        let users = Contact(firstName:firstNameText, lastName:lastNameText, phoneNumber:phoneNumberText, email:emailText)
         
         collection.addDocument(data:users.dictionary)
         
