@@ -14,6 +14,7 @@
 		C112E38823B577C4004D8724 /* lande1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C112E38623B577C4004D8724 /* lande1.xcdatamodeld */; };
 		C112E38A23B577C6004D8724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C112E38923B577C6004D8724 /* Assets.xcassets */; };
 		C112E38D23B577C6004D8724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C112E38B23B577C6004D8724 /* LaunchScreen.storyboard */; };
+		C15A1FC523BBFB040097D994 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A1FC423BBFB040097D994 /* Relationship.swift */; };
 		C1ADE9F623B7E7FD00106214 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADE9F523B7E7FD00106214 /* Item.swift */; };
 		C1E6158623B6B89400B58CA4 /* AddContactsBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6158523B6B89400B58CA4 /* AddContactsBillViewController.swift */; };
 		ED1FF49B23B6B4E2001B3AF0 /* BillContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF49A23B6B4E2001B3AF0 /* BillContactsViewController.swift */; };
@@ -41,6 +42,7 @@
 		C112E38923B577C6004D8724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C112E38C23B577C6004D8724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C112E38E23B577C6004D8724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15A1FC423BBFB040097D994 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 		C1ADE9F523B7E7FD00106214 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C1E6158523B6B89400B58CA4 /* AddContactsBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsBillViewController.swift; sourceTree = "<group>"; };
 		ED1FF49A23B6B4E2001B3AF0 /* BillContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillContactsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				ED1FF4AA23B6FCA0001B3AF0 /* GoogleService-Info.plist */,
 				EDA8B66723B7E1800071B291 /* Contact.swift */,
 				C1ADE9F523B7E7FD00106214 /* Item.swift */,
+				C15A1FC423BBFB040097D994 /* Relationship.swift */,
 				ED1FF49C23B6B54C001B3AF0 /* ContactsViewController.swift */,
 				ED6FFCB323BAAF7100C48F26 /* ContactTableViewCell.swift */,
 			);
@@ -273,6 +276,7 @@
 				C112E38823B577C4004D8724 /* lande1.xcdatamodeld in Sources */,
 				C112E38223B577C4004D8724 /* BillAmountViewController.swift in Sources */,
 				ED1FF49F23B6B580001B3AF0 /* AddUserViewController.swift in Sources */,
+				C15A1FC523BBFB040097D994 /* Relationship.swift in Sources */,
 				ED1FF49B23B6B4E2001B3AF0 /* BillContactsViewController.swift in Sources */,
 				C112E37E23B577C4004D8724 /* AppDelegate.swift in Sources */,
 				C112E38023B577C4004D8724 /* SceneDelegate.swift in Sources */,

@@ -8,12 +8,10 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class AddUserViewController: UIViewController {
 
-    @IBOutlet weak var firstNameTF: UITextField!
-    @IBOutlet weak var lastNameTF: UITextField!
-    @IBOutlet weak var phoneNumberTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     
     override func viewDidLoad() {
@@ -38,12 +36,18 @@ class AddUserViewController: UIViewController {
                 } else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
+                        let addNewUser = document.documentID
+                         let uuid = Auth.auth().currentUser!.uid
+                        
+                        let collection = Firestore.firestore().collection("relationships")
+                        let ship = Relationship(userA:uuid, userB:addNewUser)
+                           
+                        collection.addDocument(data:ship.dictionary)
                         print("SUCCESS")
                     }
                 }
         }
-
-
+        
         navigationController?.popViewController(animated: false)
     }
     
