@@ -264,7 +264,7 @@
         <!--SignUpVC-->
         <scene sceneID="dcC-e9-jGV">
             <objects>
-                <viewController storyboardIdentifier="AuthBoard" id="6PX-cK-Qiq" userLabel="SignUpVC" customClass="SignUpVC" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6PX-cK-Qiq" userLabel="SignUpVC" customClass="SignUpVC" customModule="lande1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQ6-fR-4t5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,7 +475,7 @@
         <!--Navigation Controller-->
         <scene sceneID="JHF-YD-DWW">
             <objects>
-                <navigationController storyboardIdentifier="AuthBoard" automaticallyAdjustsScrollViewInsets="NO" id="jIq-Lz-yFR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jIq-Lz-yFR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hFa-Px-Gcd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzj-vp-OHm">
