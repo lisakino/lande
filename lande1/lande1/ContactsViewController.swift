@@ -8,9 +8,13 @@
 // resources for table view: https://github.com/codepath/ios_guides/wiki/Table-View-Guide
 
 import UIKit
+import Firebase
 
 class ContactsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    
+
+    let collection = Firestore.firestore().collection("users")
     
     let data = ["1","2","3"]
     
@@ -25,7 +29,8 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         ContactTV.dataSource = self
         ContactTV.estimatedRowHeight = 100
-    //ContactTV.register(UITableViewCell.self,forCellReuseIdentifier: "ContactItem")
+        ContactTV.rowHeight = UITableView.automaticDimension
+
         
     }
     

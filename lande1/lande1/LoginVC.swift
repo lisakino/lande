@@ -24,7 +24,10 @@ class LoginVC: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: pswd.text!) { (user, error) in
             if error == nil{
-                //self.performSegue(withIdentifier: "loginToHome", sender: self)
+                if let tabbar = (self.storyboard?.instantiateViewController(withIdentifier:"tabbarSeg") as? UITabBarController){
+                    self.present(tabbar, animated: true, completion: nil)
+                }
+                
             }
             else{
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
