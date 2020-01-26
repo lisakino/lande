@@ -33,6 +33,15 @@ class AddUserViewController: UIViewController {
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
+                    
+                    let alertController = UIAlertController(title: "WrongInput", message: "No Such User", preferredStyle: UIAlertController.Style.alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    //else if querySnapshot is nil{
+                        //print("empty query")
+                    //}
                 } else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
@@ -44,11 +53,12 @@ class AddUserViewController: UIViewController {
                            
                         collection.addDocument(data:ship.dictionary)
                         print("SUCCESS")
+                        
+                    self.navigationController?.popViewController(animated: false)
                     }
                 }
         }
         
-        navigationController?.popViewController(animated: false)
     }
     
 }

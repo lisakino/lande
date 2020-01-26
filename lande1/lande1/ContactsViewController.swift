@@ -9,16 +9,26 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ContactsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    let data = ["1", "2", "3"]
     
-
-    let collection = Firestore.firestore().collection("users")
+    //let data = [Any]()
     
-    let data = ["1","2","3"]
-    
-    
+    //database stuff
+    let collection = Firestore.firestore().collection("relationships")
+/*
+    collection.whereField("userA" or "userB", isEqualTo: "TEMP_USER").getDocuments() { (querySnapshot, err) in
+        if let err = err {
+            print("Error getting documents: \(err)")
+        } else {
+            for document in querySnapshot!.documents {
+                data.append(document)
+            }
+        }
+*/
 
     @IBOutlet weak var ContactTV: UITableView!
     
@@ -45,7 +55,6 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
 //        print(data[indexPath.row])
 
         let cell = ContactTV.dequeueReusableCell(withIdentifier: "ContactItem", for: indexPath) as! ContactTableViewCell
-        
         
         cell.firstNameLabel.text = data[indexPath.row]
         return cell
